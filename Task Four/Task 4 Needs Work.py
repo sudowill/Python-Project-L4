@@ -1,3 +1,5 @@
+import string
+
 class Solution:
     def solve(self, s, k):
         def shift(c):
@@ -10,3 +12,8 @@ class Solution:
         
 ob = Solution()
 print(ob.solve("abcd", 20))
+
+
+    if the in solve:
+        print("Found shift")
+        print("Processing  shift")
