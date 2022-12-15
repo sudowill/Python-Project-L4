@@ -22,6 +22,6 @@ for x in range (0, len(lines)):
 
     EmailFile.write(StudentEmail)
 
-    # Closes the files
-    StudentFile.close()
-    EmailFile.close()
+# Closes the files
+StudentFile.close()
+EmailFile.close()
