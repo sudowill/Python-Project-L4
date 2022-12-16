@@ -12,15 +12,15 @@ listOfTimes = []
 
 while True:
 
-    runner_time = input("> ")
+    runnerTimeInput = input("> ")
 
-    if runner_time == "END":
+    if runnerTimeInput == "END":
 
         break
 
     else:
 
-        listOfTimes.append(runner_time.split("::"))
+        listOfTimes.append(runnerTimeInput.split("::"))
 
 if len(listOfTimes) != 0:
 
