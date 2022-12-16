@@ -6,7 +6,6 @@ print("Please write your inputs in the correct format 'Number of Runner'::'Time 
 print("================================================")
 listOfTimes = []
 while True:
-    # Asks for inputs until the user puts in END
     runnerTime = input(" > ")
     runnerTime = runnerTime.upper
 
@@ -14,16 +13,13 @@ while True:
 
         break
     else:
-        # Splits the two datas into ::
         listOfTimes.append(runnerTime.split("::"))
 if len(listOfTimes) != 0:
-    # Stores the data inputted into a list
     times = []
 
     for i in range(len(listOfTimes)):
 
         times.append(int(listOfTimes[i][1]))
-    # Calculations for all the different times
     minimumTime = int(min(times))
     maximumTime = divmod(int(max(times)), 60)
     maximumTime = str(maximumTime[0]) + "minutes," + str(maximumTime[1]) + "seconds"
@@ -40,7 +36,6 @@ if len(listOfTimes) != 0:
 
     minimumTime = str(minimumTime[0]) + "minutes," + str(minimumTime[1]) + "seconds"
 
-    # Gives the output of the math
     print("List of Runners Times: ", len(listOfTimes))
     print("Average Time of Runners: ", averageTime)
     print("Fastest Timed Runner: ", minimumTime)
